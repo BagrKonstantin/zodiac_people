@@ -46,12 +46,11 @@ class UI_Task1(QMainWindow, Ui_MainWindow):
         if len(talant) >= 100:
             raise IndexError
         about = self.textEdit_about.toPlainText()
-        file_path = self.file
+        file_path = "../img/" + self.file.split('/')[-1]
         return surname, name, second_name, ("Мужской" if is_man else "Женский"), email, age, zodiac, talant, about, file_path
 
     def load_photo(self):
         fname = QFileDialog.getOpenFileName(self, 'Выберите фото', '')[0]
-        print(fname)
         #self.lineEdit_for_pic.setText(fname)
         self.file = fname
         self.pixmap = QPixmap(self.file)
@@ -63,6 +62,7 @@ class UI_Task1(QMainWindow, Ui_MainWindow):
             data = self.get_data()
             if all(data):
                 print(*data)
+                self.pixmap.save("../img/{}".format(data[-1]))
                 con = sqlite3.connect(self.path)
                 cur = con.cursor()
                 cur.execute(
