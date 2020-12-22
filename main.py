@@ -22,6 +22,7 @@ class UI_Task1(QMainWindow, Ui_MainWindow):
         self.tabWidget.addTab(self.first_tab, "Участники")
         self.tabWidget.addTab(self.second_tab, "Расходы")
 
+
         self.setFixedSize(846, 668)
 
 

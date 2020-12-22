@@ -19,7 +19,8 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
         self.tableWidget.setGeometry(QtCore.QRect(70, 100, 661, 431))
-        self.tableWidget.setStyleSheet("background-color:white;")
+        self.tableWidget.setStyleSheet("background-color:white;\n"
+"border: 0px;")
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(2)
         self.tableWidget.setRowCount(0)
