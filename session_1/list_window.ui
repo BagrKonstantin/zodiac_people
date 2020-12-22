@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(220, 228, 236)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>90</y>
+      <width>681</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget:item {
+     border-radius: 20px;
+     height:40px;
+     background: white;
+     padding: 0 8px;
+	font: 14pt &quot;Segoe UI&quot;;
+ }
+QTableWidget {
+     background: white;
+ }
+
+QTableWidget:item:selected{color: rgb(112, 126, 255);}
+QTableWidget{border: 0px;}
+QTableWidget{color: rgb(99, 175, 208)}
+QTableWidget{font: 14pt &quot;Segoe UI&quot;;}
+QTableWidget {padding: 0px;} 
+QTableWidget {} 
+QTableWidget:horizontalHeader { margin:0px; 
+									background-color: black;
+				color: #NH737M;	 }</string>
+    </property>
+    <property name="autoScroll">
+     <bool>true</bool>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>134</number>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Фамилия</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Имя</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Отчество</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Возраст</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Знак зодиака</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_create">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>50</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+   background-color:rgb(56, 103, 214);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+}
+  QPushButton:hover
+{
+  background-color:#4b7bec;
+  mouse:pointer;
+}
+QPushButton:pressed {
+    background-color: rgb(50, 91, 189);
+	border-width: 2px;
+    border-style: rgba(0, 0, 0, 0.4);
+}
+QPushButton:disabled{
+	background-color:rgba(56, 103, 214, 0.6);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Создать</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_card">
+    <property name="geometry">
+     <rect>
+      <x>613</x>
+      <y>50</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+   background-color:rgb(56, 103, 214);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+}
+  QPushButton:hover
+{
+  background-color:#4b7bec;
+  mouse:pointer;
+}
+QPushButton:pressed {
+    background-color: rgb(50, 91, 189);
+	border-width: 2px;
+    border-style: rgba(0, 0, 0, 0.4);
+}
+QPushButton:disabled{
+	background-color:rgba(56, 103, 214, 0.6);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Карточка участника</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_print">
+    <property name="geometry">
+     <rect>
+      <x>528</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+   background-color:rgb(56, 103, 214);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+}
+  QPushButton:hover
+{
+  background-color:#4b7bec;
+  mouse:pointer;
+}
+QPushButton:pressed {
+    background-color: rgb(50, 91, 189);
+	border-width: 2px;
+    border-style: rgba(0, 0, 0, 0.4);
+}
+QPushButton:disabled{
+	background-color:rgba(56, 103, 214, 0.6);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Печать</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_search">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>72</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+   background-color:rgb(56, 103, 214);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+}
+  QPushButton:hover
+{
+  background-color:#4b7bec;
+  mouse:pointer;
+}
+QPushButton:pressed {
+    background-color: rgb(50, 91, 189);
+	border-width: 2px;
+    border-style: rgba(0, 0, 0, 0.4);
+}
+QPushButton:disabled{
+	background-color:rgba(56, 103, 214, 0.6);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Поиск</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>50</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_update">
+    <property name="geometry">
+     <rect>
+      <x>663</x>
+      <y>530</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+   background-color:rgb(56, 103, 214);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+}
+  QPushButton:hover
+{
+  background-color:#4b7bec;
+  mouse:pointer;
+}
+QPushButton:pressed {
+    background-color: rgb(50, 91, 189);
+	border-width: 2px;
+    border-style: rgba(0, 0, 0, 0.4);
+}
+QPushButton:disabled{
+	background-color:rgba(56, 103, 214, 0.6);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Обновить</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
