@@ -83,6 +83,7 @@ class UI_Task1(QMainWindow, Ui_MainWindow):
         self.pushButton_male.setEnabled(False)
         self.pushButton_female.setEnabled(True)
 
+
 if __name__ == "__main__":
     import sys
 
