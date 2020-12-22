@@ -43,6 +43,8 @@ class UI_Task1(QMainWindow, Ui_MainWindow):
         age = self.spinBox_age.text()
         zodiac = self.comboBox_zodiac.currentText()
         talant = self.textEdit_talant.toPlainText()
+        if len(talant) >= 100:
+            raise IndexError
         about = self.textEdit_about.toPlainText()
         file_path = self.file
         return surname, name, second_name, ("Мужской" if is_man else "Женский"), email, age, zodiac, talant, about, file_path
@@ -70,8 +72,8 @@ class UI_Task1(QMainWindow, Ui_MainWindow):
                 self.close()
             else:
                 QMessageBox.critical(self, "Ошибка", "Вы ввели не все данные", QMessageBox.Ok)
-        except Exception as error:
-            print(error)
+        except IndexError as error:
+            QMessageBox.critical(self, "Ошибка", "Поле 'Талант' ожет содержать не более 100 символов", QMessageBox.Ok)
 
     def swap_fem(self):
         self.pushButton_male.setEnabled(True)

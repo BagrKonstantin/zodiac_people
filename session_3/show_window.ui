@@ -153,54 +153,6 @@
      <string>О себе:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_save">
-    <property name="geometry">
-     <rect>
-      <x>710</x>
-      <y>531</y>
-      <width>71</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Segoe UI</family>
-      <pointsize>-1</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-      <underline>false</underline>
-      <strikeout>false</strikeout>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton
-{
-   background-color:rgb(56, 103, 214);
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 11px;
-}
-  QPushButton:hover
-{
-  background-color:#4b7bec;
-  mouse:pointer;
-}
-QPushButton:pressed {
-    background-color: rgb(50, 91, 189);
-	border-width: 2px;
-    border-style: rgba(0, 0, 0, 0.4);
-}
-QPushButton:disabled{
-	background-color:rgba(56, 103, 214, 0.6);
-    border-style: inset;
-}</string>
-    </property>
-    <property name="text">
-     <string>Закрыть</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_age">
     <property name="geometry">
      <rect>
@@ -231,7 +183,7 @@ QPushButton:disabled{
       <x>40</x>
       <y>400</y>
       <width>731</width>
-      <height>121</height>
+      <height>561</height>
      </rect>
     </property>
     <property name="font">

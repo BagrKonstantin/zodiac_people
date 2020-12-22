@@ -13,12 +13,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(846, 668)
+        MainWindow.resize(800, 600)
         MainWindow.setStyleSheet("background-color:rgb(220, 228, 236)")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
-        self.tabWidget.setGeometry(QtCore.QRect(20, 20, 800, 600))
+        self.tabWidget.setGeometry(QtCore.QRect(5, 5, 820, 620))
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
         font.setPointSize(9)
