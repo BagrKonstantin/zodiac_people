@@ -6,7 +6,6 @@ from session_1.main import UI_Task1 as first_tab
 from session_5.main import UI_Task1 as second_tab
 
 
-
 class UI_Task1(QMainWindow, Ui_MainWindow):
     def __init__(self, path):
         super(UI_Task1, self).__init__()

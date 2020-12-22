@@ -24,10 +24,9 @@ class Dialog(QMainWindow, Ui_Dialog):
         self.dateEdit.setFont(font)
         self.dateEdit.setCalendarPopup(True)  # +++
         self.dateEdit.setTimeSpec(QtCore.Qt.LocalTime)
-        self.dateEdit.setGeometry(QtCore.QRect(249, 54, 274, 35))
+        self.dateEdit.setGeometry(QtCore.QRect(235, 50, 285, 40))
 
         self.dateEdit.setDate(QtCore.QDate.currentDate())
-
         self.dateEdit.setStyleSheet("""border-style: outset;
         border-width: 1px;
         border-color:#3867d6;
@@ -104,7 +103,7 @@ class UI_Task1(QMainWindow, Ui_MainWindow):
         self.dateEdit1.setFont(font)
         self.dateEdit1.setCalendarPopup(True)  # +++
         self.dateEdit1.setTimeSpec(QtCore.Qt.LocalTime)
-        self.dateEdit1.setGeometry(QtCore.QRect(190, 65, 133, 30))
+        self.dateEdit1.setGeometry(QtCore.QRect(220, 65, 133, 30))
         self.dateEdit1.setStyleSheet("""border-style: outset;
 border-width: 1px;
 border-color:#3867d6;
@@ -118,7 +117,7 @@ border-radius: 3px;""")
         self.dateEdit2.setFont(font)
         self.dateEdit2.setCalendarPopup(True)  # +++
         self.dateEdit2.setTimeSpec(QtCore.Qt.LocalTime)
-        self.dateEdit2.setGeometry(QtCore.QRect(581, 65, 133, 30))
+        self.dateEdit2.setGeometry(QtCore.QRect(600, 65, 133, 30))
 
         self.dateEdit2.setDate(QtCore.QDate.currentDate())
 

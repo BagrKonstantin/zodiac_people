@@ -46,7 +46,7 @@ class Ui_MainWindow(object):
         self.label_3 = QtWidgets.QLabel(self.horizontalLayoutWidget)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         self.label_3.setFont(font)
