@@ -23,9 +23,9 @@ class UI_Task1(QMainWindow, Ui_MainWindow):
 
         self.label_age.setText("Возраст: {}".format(age))
         self.label_zodiac.setText("Знак зодиака: {}".format(zodiac))
-        self.textBrowser.setText(talant)
+        self.textBrowser.setText(str(talant))
         self.label_sex.setText("Пол: {}".format(sex))
-        self.textBrowser_2.setText(about)
+        self.textBrowser_2.setText(str(about))
         self.textBrowser_2.setGeometry(QtCore.QRect(40, 400, 731, 1000))
 
         self.pushButton_save.hide()
